@@ -12,19 +12,15 @@ function submitForm(event) {
         case 'PPM-M':
             if (sex === 'woman') {
                 result = Math.ceil((10 * weight) + (6.25 * height) - (5 * age) - 161)
-                console.log(result)
             } else if (sex === 'man') {
                 result = Math.ceil((10 * weight) + (6.25 * height) - (5 * age) + 5)
-                console.log(result)
             }
             break;
         case 'PPM-HB':
             if (sex === 'woman') {
                 result = Math.ceil(655.1 + (9.563 * weight) + (1.85 * height) - (4.676 * age))
-                console.log(result)
             } else if (sex === 'man') {
                 result = Math.ceil(66.5 + (13.75 * weight) + (5.003 * height) - (6.775 * age))
-                console.log(result)
             }
             break;
     }
